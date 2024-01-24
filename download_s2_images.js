@@ -89,7 +89,7 @@ function maskS2clouds(image) {
     '2.5 * ((NIR - RED) / (NIR + 6 * RED - 7.5 * BLUE + 1))', {
       'NIR': B8,
       'RED': B4,
-      'BLUE': B3
+      'BLUE': B2
     }).rename('EVI');
 
   // kNDVI
