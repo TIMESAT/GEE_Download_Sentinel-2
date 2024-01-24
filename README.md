@@ -11,7 +11,9 @@ This project contains a Google Earth Engine script for processing Sentinel-2 sat
 - JavaScript knowledge for script customization
 
 ### Installing and Running
-1. Copy the script into your Google Earth Engine Code Editor.
+1. Copy the script (download_s2_images.js) into your Google Earth Engine Code Editor
+   or 
+   Copy from https://code.earthengine.google.com/11afd5c10ddb6cdbe8df25928147e015.
 2. Customize the `point` variable with the desired coordinates.
 3. Set the date range in the `filterDate` function.
 4. Run the script in the Code Editor to see the results and export the images.
