@@ -25,7 +25,7 @@ The script can be used for environmental monitoring, agricultural analysis, and 
 Contributions to the script are welcome. Please fork the repository and open a pull request with your changes.
 
 ## Authors
-Zhanzhang Cai, Fan Wang
+Zhanzhang Cai, Fan Wang, Min Wang
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
