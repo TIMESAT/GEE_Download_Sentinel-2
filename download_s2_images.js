@@ -23,13 +23,16 @@
 
 // Define the coordinates and buffer zone
 var point = ee.Geometry.Point([4.51984,51.30761]).buffer(1000);
+var startDate = '2018-07-01';
+var endDate = '2018-7-31';
+var output_folder = 'test';
 
 Map.addLayer(point,{color: 'yellow'},  "S2_Image");
 
 // This is the Sentinel 2 collection (all the possible available Sentinel-2 imagery)
 var S2_collection = ee.ImageCollection("COPERNICUS/S2_SR")
   .filterBounds(point)
-  .filterDate('2018-07-01', '2018-7-31').map(maskS2clouds); // change date range here
+  .filterDate(startDate, endDate).map(maskS2clouds); // change date range here
 // This tells us what images are inside the collection
 print(S2_collection);
 
@@ -58,7 +61,7 @@ for (var i = 0; i < n; i++) {
     image: img,
     description: id,
     crs: imageCrs, // Use the CRS from the selected band
-    folder: 'test',
+    folder: output_folder,
     fileNamePrefix: id,
     region: point,
     scale: 10
