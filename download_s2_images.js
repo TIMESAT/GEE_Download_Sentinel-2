@@ -74,7 +74,7 @@ for (var i = 0; i < n; i++) {
 function maskS2clouds(image) {
   var qa = image.select('QA60');
   var scl = image.select('SCL');
-  var B3 = image.select('B3').divide(10000); // Green
+  var B2 = image.select('B2').divide(10000); // Green
   var B4 = image.select('B4').divide(10000); // Red
   var B8 = image.select('B8').divide(10000); // NIR
   var B11 = image.select('B11').divide(10000); // SWIR1
